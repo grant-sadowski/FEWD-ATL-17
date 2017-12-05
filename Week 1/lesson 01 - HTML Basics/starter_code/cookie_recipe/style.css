@@ -1,0 +1,36 @@
+
+
+body {
+	background: #ffe;
+	border: 1px solid black;
+	padding-left: 25px;
+	margin: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	border: 5px solid black;
+	max-width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+a {
+	color: #900;
+}
+
+.nutrition {
+	color: #887;
+	margin-bottom: 10px;
+}
+
+/*.ingredients {
+	float: left;
+}
+
+.howto {
+	float: right;
+}*/
