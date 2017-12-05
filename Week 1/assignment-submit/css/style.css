@@ -1,0 +1,87 @@
+body {
+	background: lightgrey;
+	border: 5px solid black;
+	padding: 0;
+	margin: 20px;
+	text-align: center;
+	font-family: arial, helvetica, sans-serif;
+	color: #222;
+	font-size: 24px;
+/*	letter-spacing: -20px;
+*/}
+
+img[alt] {
+  /*float: right;*/
+  /*max-height: 300px;*/
+  border: 1px solid black;
+}
+
+h1 {
+	font-size: 50px;
+	 
+}
+
+h3 {
+  text-align: left;
+  font-size: 30px;
+}
+
+hr {
+	border: none;
+	border: 1px solid #222;
+	margin: 0 20px;
+}
+
+p {
+	font-family: Georgia, serif;
+	font-size: 24px;
+}
+
+a {
+	color: #222;
+}
+
+ul {
+	text-align: left;
+}
+
+.header {
+  background-color: lightgrey;
+  color: #222;
+  padding: 10px 0;
+  margin-top: 0;
+}
+
+.social-nav {
+  padding: 10px;
+  background-color: lightgrey;
+  
+}
+
+.avatar {
+  display: block;
+  float: right;
+  max-width: 400px;
+  margin-right: 200px;
+  margin-top: 55px;
+}
+
+.about {
+  padding: 10px 55px 55px;
+  overflow: auto;
+  height: 200px;
+  margin-bottom: 255px;
+}
+
+.experience {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+
+}
+
+.work-examples {
+  padding-left: 20px;
+  text-align: left;
+  padding-top: 10px;
+}
