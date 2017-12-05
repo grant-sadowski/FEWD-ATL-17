@@ -1,0 +1,12 @@
+p em {
+	color: red;
+}
+
+blockquote p em {
+	color: blue;
+}
+
+h1 {
+	color: black;
+	background: lightblue;
+}
