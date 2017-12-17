@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Two Column Layout</title>
+    <style>
+      body {
+        width: 1200px;
+        box-sizing: border-box;
+        margin: auto;
+        text-align: center;
+        font-size: 36px;
+        color: #221D23;
+        font-style: bold;
+        padding: 0;
+      }
+      
+      .box {
+        border: 2px solid black;
+        background: lightgrey;
+        height: 100px;
+        margin: 10px;
+      }
+
+      .float-left {
+        width: 776px;
+        height: 500px;
+        float: left;
+      }
+      
+      .float-right {
+        width: 376px;
+        height: 500px;
+        float: right;
+      }
+      
+      .clear {
+        clear: both;
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    <div class="box">
+      Header
+    </div>
+    
+    <section class="box float-left">
+      Left Column
+    </section>
+    
+    <aside class="box float-right">
+      Right Column
+    </aside>
+    
+    <div class="clear">
+      
+    </div>
+    
+    <footer class="box">
+      Footer
+    </footer>
+
+  </body>
+  
+</html>
