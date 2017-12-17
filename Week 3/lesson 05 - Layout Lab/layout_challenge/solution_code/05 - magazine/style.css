@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+}
+
+header .logo {
+	float: left;
+	height: 100px;
+	width: 25%;
+}
+
+header nav {
+	padding-top: 25px;
+}
+
+header nav a {
+	display: inline-block;
+    width: 11%;
+    height: 50px;
+    float: right;
+    margin-left: 12px;
+}
+
+div#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+aside.main-sidebar {
+	float: left;
+	width: 20%;
+}
+
+aside.main-sidebar .placeholder {
+	height: 560px;
+	margin: 15px;
+}
+
+div#content-container {
+	width: 80%;
+	float: right;
+}
+
+div#content-container .content-banner {
+	height: 100px;
+	margin: 15px;
+}
+
+div#content-container section.content-main {
+	float: left;
+	width: 75%;
+}
+
+div#content-container aside.content-sidebar {
+	float: right;
+	width: 25%;
+}
+
+div#content-container section.content-main .placeholder, div#content-container aside.content-sidebar .placeholder {
+	height: 250px;
+	margin: 15px;
+}
+
+div#subcontent-container .subcontent {
+	width: 25%;
+	float: left;
+	padding: 0 15px;
+}
+
+div#subcontent-container .subcontent .placeholder {
+	height: 150px;
+	margin: 15px 0;
+}
+
+header, footer {
+	margin: 15px;
+}
+
+footer {
+	clear: both;
+	padding-top: 15px; /* margin-top is not respected on this cleard element, so added padding-top */
+}
+
+footer .placeholder {
+	height: 120px;
+	width: 100%;
+}
+
+.placeholder {
+	background-color: #ddd;
+	border: 1px solid gray;
+}
+
+/*.content-container {
+	margin-bottom: 15px;
+}
+
+.content-container .secondary-content {
+	width: 33.33333%;
+	float: left;
+	padding: 0 15px;
+}
+
+.content-container .secondary-content.first {
+	padding-left: 0px;
+}
+
+.content-container .secondary-content.last {
+	padding-right: 0px;
+}
+
+.content-container .secondary-content .placeholder {
+	height: 150px;
+}*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

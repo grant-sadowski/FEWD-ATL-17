@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#main-content {
+	float: left;
+	width: 70%;
+}
+
+#sidebar {
+	float: right;
+	width: 30%;
+}
+
+#main-content .placeholder, #sidebar .placeholder {
+	height: 450px;
+	margin: 15px;
+}
+
+header, footer {
+	margin: 15px;
+}
+
+footer {
+	clear: both;
+	padding-top: 15px; /* margin-top is not respected on this cleard element, so added padding-top */
+}
+
+header .placeholder, footer .placeholder {
+	height: 120px;
+	width: 100%;
+}
+
+.placeholder {
+	background-color: #ddd;
+	border: 1px solid gray;
+}
