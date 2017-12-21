@@ -1,0 +1,17 @@
+button {
+	width: 300px;
+	height: 300px;
+	font-size: 18px;
+	background-color: grey;
+	border: 1px solid black;
+	border-radius: 100%;
+}
+
+.color {
+	background-color: red;
+}
+
+h1 {
+	font-family: 'sans-serif';
+	font-size: 48px;
+}
