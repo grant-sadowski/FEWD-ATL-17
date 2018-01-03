@@ -142,11 +142,11 @@ h2 a {
   padding-left: 3px;
   font-weight: 600;
 }
-.readmore, .readless {
+.readmore-1, .readmore-2, .readless-1, .readless-2 {
   text-align: right;
   margin-top: 30px;
 }
-.readmore a, .readless a {
+.readmore-1 a, .readmore-2 a, .readless-1 a, .readless-2 a {
   color: #043049;
   font-weight: 600;
 }
@@ -228,6 +228,32 @@ footer p {
 /* ADDITIONAL STYLES
 /*******************************************/
 
+#dialog {
+  display: none;
+}
 
+.ui-widget {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+}
 
+#inner-box {
+  background: white;
+  padding: 10px;
+}
 
+.ui-widget-content {
+  background: #033048;
+  color: #606161;
+  padding-bottom: 15px;
+}
+
+.ui-widget-header {
+  background: #033048;
+  color: white;
+  border: 1px solid #033048;
+}
+
+.ui-button {
+  margin-right: 10px;
+}
