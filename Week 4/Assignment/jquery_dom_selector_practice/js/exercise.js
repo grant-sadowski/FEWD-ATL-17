@@ -13,22 +13,14 @@
  * We've started you off, replace the sec
  */
  
-	function question1(){
-		$("replaceMe").css("replaceMe", "replaceMe");
-	}
-
-	$("#button1").click(question1);
+	
 
 /**
  * Question 2:
  * When button 1 is clicked, select all <h2> elements on this page, and change the text to say your name.
  */
 
-	// function question2(){
-	// 	$("replaceMe").replaceMe("replaceMe");
-	// }
-
-	// $("#button1").click(question2);
+	
 
 /**
  * Question 3:
@@ -36,11 +28,7 @@
  * Using jQuery change the content to read "True Fact".
  */
 
-	// function replaceMe(){
-	// 	$("replaceMe").html("replaceMe");
-	// }
-
-	// $("#button1").click(question3);
+	
 
 
 //SECTION 2: Now you are on your own. Write the necessary code to accomplish the following.
