@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Atlanta Coffee Map</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+  <body>
+    <section class="map">
+      <div id="googleMap"></div>
+    </section>
+    
+    <aside class="floatLeft">
+      <div class="logo">
+        <h1>Atlanta<br>Coffee<br>Map</h1>
+      </div>
+      
+      <nav class="navLinks">
+        <ul>
+          <li><a href="#">Atlanta Coffee Map</a></li>
+          <li><a href="#">Learn About Coffee</a></li>
+          <li class="hide"><a href="#">Americano</a></li>
+          <li class="hide"><a href="#">Cappuccino</a></li>
+          <li class="hide"><a href="#">Latte</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('googleMap'), {
+          center: {lat: 33.7490, lng: -84.3880},
+          zoom: 13
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMQ5ZW94zBQ1gw5hJouc-wNI_CyLkM5FI&callback=initMap"
+    async defer></script>
+    
+  </body>
+</html>

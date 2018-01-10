@@ -1,0 +1,103 @@
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/*-----------------------------------------GENERAL STYLES*/
+a:link {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+ul {
+	font-size: 24px;
+}
+
+a {
+  color: white;
+}
+
+li {
+  padding-top: 20px;
+}
+
+section {
+	border: 1px solid blue;
+}
+
+
+/*-----------------------------------------NAV STYLES*/
+
+aside {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+}
+
+.navLinks {
+	background: #324669;
+	height: 350px;
+	width: 250px;
+	
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.logo {
+  padding-left: 15px;
+  padding-top: 15px;
+  background: #DBB74C;
+  height: 250px;
+  width: 250px;
+}
+
+
+.hide {
+	display: none;
+	margin-left: 35px;
+}
+
+/*-----------------------------------------MAP STYLES*/
+.map {
+  height: 1000px;
+  width: 100%;
+}
+
+#googleMap {
+  height: 100%;
+  
+}
+
+
+/*-----------------------------------------LAYOUT STYLES*/
+.floatLeft {
+	float: left;
+	width: 30%;
+}
+
+.floatRight {
+	float: right;
+	width: 70%;
+}
