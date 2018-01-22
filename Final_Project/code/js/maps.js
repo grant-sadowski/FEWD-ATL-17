@@ -414,7 +414,6 @@ function initMap() {
 // }
 
 function clickBrash () {
-  alert("hi!");
   fnbrash();
 }
 

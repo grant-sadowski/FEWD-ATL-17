@@ -65,16 +65,21 @@ a {
 }
 
 li {
-  padding-top: 40px;
+  padding: 20px 0;
   text-align: center;
 }
 
 
 /*-----------------------------------------NAV STYLES*/
+#fixed-sidebar {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
 
 .navLinks {
 	background: #BD632F;
-	height: 350px;
+	height: 327px;
 	width: 250px;
 }
 
@@ -102,6 +107,12 @@ li {
 .logo img {
   margin: 25px;
   height: 200px;
+}
+
+#current-page {
+  border-left: 4px solid #576784;
+  background-color: rgba(255,255,255,.2);
+  padding-right: 4px;
 }
 
 /*-----------------------------------------ABOUT STYLES*/
