@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About  |  ATL Coffee Map</title>
+    		
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
+
+  </head>
+  
+  <body>
+    
+    <aside class="floatLeft">
+      <div class="logo">
+        <img src="images/ATLcoffeemap-01.png" alt="ATL Coffee Map logo">
+        <!--<h1 id="big">ATL</h1>-->
+        <!--<h1>Coffee</h1>-->
+        <!--<h1>Map</h1>-->
+      </div>
+      
+      <nav class="navLinks">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img src="images/treasure-map-50.png" alt="map icon">
+              <p>Atlanta Coffee Map</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/binoculars-50.png" alt="map icon">
+              <p>Reference Guide</p>
+            </a>
+          </li>
+          <li>
+            <a href="about.html"><img src="images/tools-50.png" alt="map icon">
+              <p>About</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <section class = "about">
+      <div class="overlay">
+        <h2>About<br>the<br>Project</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio nulla, ultricies quis sollicitudin ac, gravida eget leo. Curabitur tincidunt vel est eu cursus. Vestibulum ultrices in magna sed condimentum. Maecenas rhoncus risus vel egestas ornare. Cras rhoncus justo at quam mattis volutpat. Aenean vitae ipsum sit amet lorem luctus tempor non nec augue. In cursus venenatis viverra. Fusce id nisi a libero varius pharetra. Ut at risus non eros tristique accumsan vitae vel lectus. Sed et viverra purus. Maecenas non tortor ut nisi suscipit lacinia. Praesent varius nisi at pulvinar euismod. Curabitur risus nunc, dignissim sed magna sit amet, laoreet ultrices lacus. Fusce ac neque lorem. Mauris ut lobortis magna.</p>
+      </div>
+    </section>
+    
+    <section class="clear">
+      <div>
+        <h2>Creators</h2>
+      </div>
+      
+      <div class="creator">
+        <img class="floatLeft" src="images/grant.jpg" alt="Grant Sadowski">
+        <div class="clearFix Grant">
+          <h3>Grant Sadowski</h3>
+          <p>Sed augue est, aliquam quis maximus at, fringilla non tellus. Nullam nec justo est. Duis maximus elementum rutrum. Fusce a lectus volutpat, tempus neque sed, blandit lectus. Aenean posuere, metus id vestibulum ornare, erat mi scelerisque nunc, sed convallis metus metus nec turpis.</p>
+        </div>
+        <div class="clearFix Grant-links">
+          <ul>
+            <li><a href="#"><img class="social-icon" src="images/Instagram-icon.png" alt="Instagram icon"></a></li>
+            <li><a href="#"><img class="social-icon" src="images/Twitter_Social_Icon_Circle_White.png" alt="Twitter icon"></a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="clear">
+        
+      </div>
+      
+      <div class="creator">
+        <img class="floatRight" src="images/elaine.jpg" alt="Elaine Stephenson">
+        <div class="clearFix Elaine">
+          <h3>Elaine Stephenson</h3>
+          <p>Sed augue est, aliquam quis maximus at, fringilla non tellus. Nullam nec justo est. Duis maximus elementum rutrum. Fusce a lectus volutpat, tempus neque sed, blandit lectus. Aenean posuere, metus id vestibulum ornare, erat mi scelerisque nunc, sed convallis metus metus nec turpis.</p>
+        </div>
+        <div class="clearFix Elaine-links">
+          <ul>
+            <li><a href="#"><img class="social-icon" src="images/Instagram-icon.png" alt="Instagram icon"></a></li>
+            <li><a href="#"><img class="social-icon" src="images/Twitter_Social_Icon_Circle_White.png" alt="Twitter icon"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="clear">
+      <div>
+        <h2>Instagram</h2>
+      </div>
+      <div id="instafeed">
+        
+      </div>
+      
+      
+    </section>
+    
+    
+    
+    <footer class="clear">
+      <p>Copyright 2018</p>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </footer>
+    
+    
+    <script type="text/javascript" src="js/instafeed.js"></script>
+    
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'YOUR_CLIENT_ID'
+      });
+      feed.run();
+    </script>
+    
+  </body>
+  
+  
+  
+</html>

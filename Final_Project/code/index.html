@@ -2,7 +2,8 @@
 <html>
 
 	<head>
-		<title>Atlanta Coffee Map</title>
+		<title>ATL Coffee Map</title>
+		
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,32 +16,47 @@
     
     <aside class="floatLeft">
       <div class="logo">
-        <h1>Atlanta<br>Coffee<br>Map</h1>
+        <img src="images/ATLcoffeemap-01.png" alt="ATL Coffee Map logo">
+        <!--<h1 id="big">ATL</h1>-->
+        <!--<h1>Coffee</h1>-->
+        <!--<h1>Map</h1>-->
       </div>
       
       <nav class="navLinks">
         <ul>
-          <li><a href="#">Atlanta Coffee Map</a></li>
-          <li><a href="#">Learn About Coffee</a></li>
-          <li class="hide"><a href="#">Americano</a></li>
-          <li class="hide"><a href="#">Cappuccino</a></li>
-          <li class="hide"><a href="#">Latte</a></li>
-          <li><a href="#">About</a></li>
+          <li>
+            <a href="index.html">
+              <img src="images/treasure-map-50.png" alt="map icon">
+              <p>Atlanta Coffee Map</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/binoculars-50.png" alt="map icon">
+              <p>Reference Guide</p>
+            </a>
+          </li>
+          <li>
+            <a href="about.html"><img src="images/tools-50.png" alt="map icon">
+              <p>About</p>
+            </a>
+          </li>
         </ul>
       </nav>
     </aside>
     
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('googleMap'), {
-          center: {lat: 33.7490, lng: -84.3880},
-          zoom: 13
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMQ5ZW94zBQ1gw5hJouc-wNI_CyLkM5FI&callback=initMap"
-    async defer></script>
+    <footer>
+      <div class="footer-overlay">
+        <p>Copyright 2018</p>
+      </div>
+      
+    </footer>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMQ5ZW94zBQ1gw5hJouc-wNI_CyLkM5FI&callback=initMap" async defer></script>
+    
+    <script src="js/index.js"></script>
+    <script src="js/maps.js"></script>
+
   </body>
 </html>

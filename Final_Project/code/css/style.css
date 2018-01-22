@@ -26,7 +26,14 @@ body {
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 60px;
+	text-align: center;
+	font-weight: 500;
+	color: white;
+}
+
+#big {
+  font-size: 84px;
 }
 
 ul {
@@ -38,11 +45,8 @@ a {
 }
 
 li {
-  padding-top: 20px;
-}
-
-section {
-	border: 1px solid blue;
+  padding-top: 40px;
+  text-align: center;
 }
 
 
@@ -53,26 +57,35 @@ aside {
   top: 10px;
   left: 10px;
   z-index: 99;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navLinks {
-	background: #324669;
+	background: #BD632F;
 	height: 350px;
 	width: 250px;
-	
-	padding-left: 15px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+}
+
+.navLinks img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: 40px;
+}
+
+.navLinks p {
+  padding-top: 5px;
 }
 
 .logo {
-  padding-left: 15px;
-  padding-top: 15px;
   background: #DBB74C;
   height: 250px;
   width: 250px;
 }
 
+.logo img {
+  margin: 25px;
+}
 
 .hide {
 	display: none;
@@ -81,8 +94,26 @@ aside {
 
 /*-----------------------------------------MAP STYLES*/
 .map {
-  height: 1000px;
+  /*height: 900px;*/
+  height: 95vh;
   width: 100%;
+}
+
+footer {
+  height: 5vh;
+  background-image: url("../images/Topographic-Map-Pattern-5.png");
+  text-align: center;
+}
+
+footer p {
+  font-size: 24px;
+  color: white;
+  padding-top: 10px;
+}
+
+.footer-overlay {
+  height: 5vh;
+  background: rgba(255,160,122,.8);
 }
 
 #googleMap {
@@ -94,10 +125,8 @@ aside {
 /*-----------------------------------------LAYOUT STYLES*/
 .floatLeft {
 	float: left;
-	width: 30%;
 }
 
 .floatRight {
 	float: right;
-	width: 70%;
 }

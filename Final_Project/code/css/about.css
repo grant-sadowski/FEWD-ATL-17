@@ -1,0 +1,218 @@
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/*-----------------------------------------GENERAL STYLES*/
+a:link {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	font-weight: 500;
+	color: white;
+}
+
+#big {
+  font-size: 84px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.25em;
+  padding: 24px 0;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.25em;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  height: 500px;
+}
+
+ul {
+	font-size: 24px;
+}
+
+a {
+  color: white;
+}
+
+li {
+  padding-top: 40px;
+  text-align: center;
+}
+
+
+/*-----------------------------------------NAV STYLES*/
+
+.navLinks {
+	background: #BD632F;
+	height: 350px;
+	width: 250px;
+}
+
+.navLinks img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: 40px;
+}
+
+.navLinks p {
+  padding-top: 5px;
+}
+
+.navLinks li p {
+  font-size: 24px;
+}
+
+.logo {
+  background: #DBB74C;
+  height: 250px;
+  width: 250px;
+}
+
+.logo img {
+  margin: 25px;
+  height: 200px;
+}
+
+/*-----------------------------------------ABOUT STYLES*/
+.about {
+  overflow: hidden;
+  height: 600px;
+  background-image: url("../images/Topographic-Map-Pattern-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about h2 {
+  font-size: 60px;
+  padding: 24px 0 24px 0;
+  color: white;
+}
+
+.about p {
+  font-size: 24px;
+  line-height: 1;
+  padding: 24px 36px 24px 36px;
+  color: white;
+}
+
+.overlay {
+  height: 600px;
+  background: rgba(0,0,0,.6);
+}
+
+/*-----------------------------------------CREATOR STYLES*/
+
+.creator h3 {
+  padding: 36px;
+  font-size: 36px;
+  color: white;
+}
+
+.creator p {
+  padding: 36px;
+  font-size: 24px;
+  color: white;
+}
+
+.creator a {
+  color: black;
+}
+
+.creator li {
+  display: inline;
+  padding-left: 36px;
+}
+
+.Grant {
+  height: 400px;
+  background: #576784;
+}
+
+.Grant-links {
+  height: 100px;
+  background: #324669;
+}
+
+.Elaine {
+  height: 400px;
+  background: #B44B5E;
+}
+
+.Elaine-links {
+  height: 100px;
+  background: #A4243B;
+}
+
+.social-icon {
+  height: 36px;
+  margin-top: 32px;
+}
+
+
+/*-----------------------------------------FOOTER STYLES*/
+
+footer {
+  height: 50px;
+}
+
+footer li {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*-----------------------------------------BORDER STYLES*/
+
+footer {
+  border: 1px solid red;
+}
+
+/*-----------------------------------------FLOATS STYLES*/
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearFix {
+  overflow: hidden;
+}
