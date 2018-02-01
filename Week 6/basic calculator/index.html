@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Calculator</title>
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Basic Calculator</h1>
+
+		<form>
+			<input class="form-element" id="first-number" type="number" name="first-number">
+			<select class="form-element" id="operator">
+				<option value="plus"> + </option>
+				<option value="minus"> - </option>
+				<option value="multiply"> * </option>
+				<option value="divide"> / </option>
+			</select>
+			<input class="form-element" id="second-number" type="number" name="second-number">
+			<button type="submit" id="submit-btn"> = </button>
+			<h2 id="answer"></h2>
+		</form>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
