@@ -3,6 +3,8 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="boxes.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div id='wrapper'>
@@ -13,13 +15,16 @@
 					<li class = 'box float-left'>H_Box 3</li>
 					<li class = 'box float-left'>H_Box 4</li>
 				</ul>
-				<div id='hamburger' class='box float-right'>
-					Content!
+				<div id='hamburger' class='box float-right' onclick="myFunction(this)">
+<!-- 					<p><a href="#">|||</a></p>
+ -->					<div class='burg1'></div>
+					<div class='burg2'></div>
+					<div class='burg3'></div>
 				</div>
 			</header>
 			
 			<div id='hero' class = 'box clearfix'>
-				
+				/ / HERO \ \
 			</div>
 
 			<section class = 'clearfix'>
@@ -35,6 +40,12 @@
 				<div class = 'box footer-box float-left'>Footer 3</div>
 			</footer>
 		</div>
+
+	<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
 
 	</body>
 </html>
