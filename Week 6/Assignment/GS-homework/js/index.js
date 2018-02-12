@@ -7,10 +7,16 @@ $(document).ready(function() {
 
   // Use a for loop to iterate through the array and add each as an option for the select menu
 
-  for (i in cityOptions) {
-    $('#city-type').append('<option>'+cityOptions[i]+'</option>');
-    // Append method adds city within the select tag as an <option>
-  }
+  // OLD METHOD BEFORE CLASS (LESSON 14)
+  // for (i in cityOptions) {
+  //   $('#city-type').append('<option>'+cityOptions[i]+'</option>');
+  //   // Append method adds city within the select tag as an <option>
+  // }
+
+  $.each(cityOptions, function(index, value) {
+    console.log(value);
+    $('#city-type').append('<option>'+value+'</option>');
+  })
   
   
   $('#city-type').change(updateCityBackground);  // Wait for user input via change in the select bar
