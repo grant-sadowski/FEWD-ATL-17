@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Course Application form</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<form>
+				<div id="header">
+					<h1>Course Application</h1>
+				</div>
+				<div id=content>
+					<div class="titles">
+						<h2>Your Contact Info</h2>
+					</div>
+
+					<div class="form-elements">
+						<label>Your Name</label><input class="nameField" type="text" name="fname" placeholder="First">
+						<input class="nameField" type="text" name="lname" placeholder="Last"><br>
+
+						<label>Phone Number</label><input class="phonenumb"type="number" name="pnum1"> - 
+						<input class="phonenumb"type="number" name="pnum2"> - 
+						<input class="phonenumb"type="number" name="pnum3"><br>
+
+						<label>Address</label><input class="addressLong"type="text" name="street1" placeholder="Street Address"><br>
+						<label></label><input class="addressLong"type="text" name="street2" placeholder="Address line 2"><br>
+						<label></label><input type="text" name="city" placeholder="City">
+						<input type="text" name="state" placeholder="State">
+						<input type="text" name="zip" placeholder="Postal Code"><br>
+					</div>	
+
+					<div class="titles">
+						<h2>Skills and Interests</h2>
+					</div>
+
+					<div class="form-elements">
+						<label>Course</label><select name="course">
+							<optgroup label="Web Development">
+								<option value="frontend">Front-end</option>
+								<option value="backend">Back-end</option>
+							</optgroup>
+							<optgroup label="vdesign">
+								<option value="frontend">Visual Design</option>
+								<option value="ux">User Experience</option>
+							</optgroup>
+						</select><br>
+						<label>Past Experience</label><textarea rows="6" cols="90"></textarea><br>
+					</div>
+
+					<div class="titles">
+						<h2>Anything Else?</h2>
+					</div>
+
+					<div class="form-elements">
+						<label>Referral</label><select name="refer">
+							<option value="friend">Friend</option>
+							<option value="instructor">Instructor</option>
+							<option value="online">Online</option>
+						</select><br>
+
+						<label>Comments</label><textarea rows="6" cols="90"></textarea><br>
+					</div>
+
+					<div id="buttonDiv">
+						<input type="button" name="save-btn" value="Save Draft">
+						<input type="submit" name="submit-btn" value="Submit">
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
