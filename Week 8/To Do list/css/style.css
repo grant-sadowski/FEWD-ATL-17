@@ -1,0 +1,14 @@
+
+
+a:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+
+
+
+.completed {
+	color: red;
+	text-decoration: line-through;
+}
