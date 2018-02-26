@@ -3,82 +3,111 @@
 
 	<head>
 		<title>ATL Coffee Map</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Scope+One" rel="stylesheet">
 		
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+		
 	</head>
 
   <body>
+    <div data-parallax="scroll" data-image-src="images/Topographic Map Patterns_big.png">
+      <div id="header-wrapper">
+        <header class="logo-header">
+          <div class="logo">
+            <img src="images/ATL_coffee_map_logo.png" alt="ATL Coffee Map logo">
+          </div>
+          
+          <div id="hamburger" onclick="hamburgerChange(this)">
+            <div class="burg1"></div>
+            <div class="burg2"></div>
+            <div class="burg3"></div>
+          </div>
+        </header>
+      </div>
+      
+      <nav id="navLinks" class="hide-nav">
+        <div id="menu-overlay">
+          <ul>
+            <li>
+              <a href="index.html">
+                <p class="active-link">The Map</p>
+              </a>
+            </li>
+            <li>
+              <a href="reference.html">
+                <p>Guide</p>
+              </a>
+            </li>
+            <li id="logo-spacer-div">
+            </li>
+            <li>
+              <a href="about.html">
+                <p>About</p>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
     <section class="map">
       <div id="googleMap"></div>
     </section>
     
-    <aside class="floatLeft">
-      <div class="logo">
-        <img src="images/ATLcoffeemap-01.png" alt="ATL Coffee Map logo">
-        <!--<h1 id="big">ATL</h1>-->
-        <!--<h1>Coffee</h1>-->
-        <!--<h1>Map</h1>-->
-      </div>
-      
-      <nav class="navLinks">
-        <ul>
-          <li id="current-page">
-            <a href="index.html">
-              <img src="images/treasure-map-50.png" alt="map icon">
-              <p>Atlanta Coffee Map</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/binoculars-50.png" alt="map icon">
-              <p>Reference Guide</p>
-            </a>
-          </li>
-          <li>
-            <a href="about.html"><img src="images/tools-50.png" alt="map icon">
-              <p>About</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-    
+    <!--The Modal-->
     <div id="modalBrash" class="modal">
       
       <!--Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2>Brash Coffee</h2>
+          <div class="modal-header-left">
+            <h5>Brash Coffee (Westside)</h5>
+          </div>
+          <div class="modal-header-right">
+            <img src="images/icons/x_icon.png">
+            <!--<h5 class="close">&times;</h5>-->
+          </div>
         </div>
         <div class="modal-body">
-          <h3>Address</h3>
-          <p>1234 Street Name</p>
-          <p>Atlanta, GA 30312</p>
-          <h3>Hours</h3>
-          <p>M-F:  7am - 4pm</p>
-          <img src='https://images.unsplash.com/photo-1516337125546-128104c7ecb0?auto=format&fit=crop&w=1350&q=80' alt='pic'>
+          <div class="modal-left">
+            <img src="images/icons/Location_icon.png" alt="location icon"><p>1168 Howell Mill Rd NW</p>
+            <p>Atlanta, GA 30318</p>
+            <br>
+            <img src="images/icons/Website_icon.png" alt="location icon"><p><a href="https://www.brashcoffee.com">brashcoffee.com</a></p>
+            <br>
+            <img src="images/icons/Phone_icon.png" alt="location icon"><p>(678)-555-5555</p>
+          </div>
+          <div class="modal-right">
+            <br>
+            <img src="images/icons/Hours_icon.png" alt="location icon"><p>M – F: 7am – 6pm</p>
+            <p>Sa – Su: 8am – 6pm</p>
+            <a class="modal-button" href="shopPages/brash.html">Read More</a>
+          </div>
         </div>
         <div class="modal-footer">
-          <p>More<img src="../images/double-down-32.png"></p>
+          <a href="shopPages/brash.html">Read More</a>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="footer-overlay">
-        <p>Copyright 2018</p>
-      </div>
-      
-    </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMQ5ZW94zBQ1gw5hJouc-wNI_CyLkM5FI&callback=initMap" async defer></script>
-    
+    <script src="js/parallax.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/maps.js"></script>
 
   </body>
 </html>

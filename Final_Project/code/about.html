@@ -2,122 +2,184 @@
 <html lang="en">
   <head>
     <title>About  |  ATL Coffee Map</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Scope+One" rel="stylesheet">
     		
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/about.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
   
   <body>
-    
-    <aside id="fixed-sidebar">
-      <div class="logo">
-        <img src="images/ATLcoffeemap-01.png" alt="ATL Coffee Map logo">
-        <!--<h1 id="big">ATL</h1>-->
-        <!--<h1>Coffee</h1>-->
-        <!--<h1>Map</h1>-->
+    <div data-parallax="scroll" data-image-src="images/Topographic Map Patterns_big.png">
+      <div id="header-wrapper">
+        <header class="logo-header">
+          <div class="logo">
+            <img src="images/ATL_coffee_map_logo.png" alt="ATL Coffee Map logo">
+          </div>
+          
+          <div id="hamburger" onclick="hamburgerChange(this)">
+            <div class="burg1"></div>
+            <div class="burg2"></div>
+            <div class="burg3"></div>
+          </div>
+        </header>
       </div>
-      
-      <nav class="navLinks">
-        <ul>
-          <li>
-            <a href="index.html">
-              <img src="images/treasure-map-50.png" alt="map icon">
-              <p>Atlanta Coffee Map</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/binoculars-50.png" alt="map icon">
-              <p>Reference Guide</p>
-            </a>
-          </li>
-          <li id="current-page">
-            <a href="about.html"><img src="images/tools-50.png" alt="map icon">
-              <p>About</p>
-            </a>
-          </li>
-        </ul>
+      <nav id="navLinks" class="hide-nav">
+        <div id="menu-overlay">
+          <ul>
+            <li>
+              <a href="index.html">
+                <p>The Map</p>
+              </a>
+            </li>
+            <li>
+              <a href="reference.html">
+                <p>Guide</p>
+              </a>
+            </li>
+            <li id="logo-spacer-div">
+            </li>
+            <li>
+              <a href="about.html">
+                <p class="active-link">About</p>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </aside>
+  
+      
+      <section>
+        <div class="overlay">
+          <div id="hero-img">
+          </div>
+        </div>
+      </section>
+    </div>
     
-    <section class = "about">
-      <div class="overlay">
-        <h2>About<br>the<br>Project</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio nulla, ultricies quis sollicitudin ac, gravida eget leo. Curabitur tincidunt vel est eu cursus. Vestibulum ultrices in magna sed condimentum. Maecenas rhoncus risus vel egestas ornare. Cras rhoncus justo at quam mattis volutpat. Aenean vitae ipsum sit amet lorem luctus tempor non nec augue. In cursus venenatis viverra. Fusce id nisi a libero varius pharetra. Ut at risus non eros tristique accumsan vitae vel lectus. Sed et viverra purus. Maecenas non tortor ut nisi suscipit lacinia. Praesent varius nisi at pulvinar euismod. Curabitur risus nunc, dignissim sed magna sit amet, laoreet ultrices lacus. Fusce ac neque lorem. Mauris ut lobortis magna.</p>
+    <section class="page-title">
+      <div>
+        <h1>About the Project</h1>
+        <p>ATL Coffee Map started as an idea and then became a reality after Grant and Elaine moved to the Old Fourth Ward in Atlanta. They love exploring the city and trying different places to eat and drink, so on the weekends they decided to start going to a new coffee shop each week. The ritual of discovering a new place, trying a latte and tasty croissant became a special time they look forward to each week. After doing this for a few weeks they thought that there should be a better and easier way to discover the great local, small coffee shops around the city. So ATL Coffee Map was born as a way to share their passion and help others discover new coffee shops hidden around our fine city.</p>
       </div>
     </section>
     
     <section class="clear">
-      <div>
-        <h2>Creators</h2>
+      <div class="section-title">
+        <h2>The Explorers</h2>
       </div>
       
       <div class="creator">
-        <img class="floatLeft" src="images/grant.jpg" alt="Grant Sadowski">
-        <div class="clearFix Grant">
-          <h3>Grant Sadowski</h3>
-          <p>Sed augue est, aliquam quis maximus at, fringilla non tellus. Nullam nec justo est. Duis maximus elementum rutrum. Fusce a lectus volutpat, tempus neque sed, blandit lectus. Aenean posuere, metus id vestibulum ornare, erat mi scelerisque nunc, sed convallis metus metus nec turpis.</p>
-        </div>
-        <div class="clearFix Grant-links">
-          <ul>
-            <li><a href="#"><img class="social-icon" src="images/Instagram-icon.png" alt="Instagram icon"></a></li>
-            <li><a href="#"><img class="social-icon" src="images/Twitter_Social_Icon_Circle_White.png" alt="Twitter icon"></a></li>
-          </ul>
+        <div id="container-G">
+          <div id="Grant-avatar-img-div">
+            <img class= "avatar" src="images/Profile_photos_Grant.png" alt="Grant Sadowski">
+          </div>
+          <div class="clearFix Grant">
+            <h3 class="animation-element slide-left">Grant Sadowski</h3>
+            <h4 class="animation-element slide-left">Creator, Developer, Photgrapher</h4>
+            <h4 class="animation-element slide-left">Favorite drink: Americano</h4>
+            <p class="animation-element slide-left">Grant has been calling Atlanta his home since 2003 and while he’s moved away twice, he keeps coming back. By day, Grant is a project manager for an engineering company; by night, he’s a newbie front end web developer with equal interest in product management and design. His passion is creating digital experiences that not only excite people but push expand his understanding of what web development can be. Grant can often be found running around the city on foot preparing for his next big race, hanging out in coffee shops with Elaine or exploring the ever-changing Atlanta food scene. </p>
+            <div class="links-div">
+              <ul class="Grant-links">
+                <li><a href="https://www.instagram.com/mighty_grant/"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.64.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.36.2-6.78,2.62-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.36,2.62,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.35-.2,6.78-2.62,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.35-2.62-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" transform="translate(0)"/></svg></a></li>
+                <li><a href="https://twitter.com/Mighty_Grant"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 19.5"><path d="M24,4.56a9.83,9.83,0,0,1-2.83.78,4.93,4.93,0,0,0,2.17-2.72,9.86,9.86,0,0,1-3.13,1.2,4.93,4.93,0,0,0-8.39,4.49A14,14,0,0,1,1.67,3.15,4.93,4.93,0,0,0,3.19,9.72,4.9,4.9,0,0,1,1,9.11,4.93,4.93,0,0,0,4.91,14a4.94,4.94,0,0,1-2.22.08,4.93,4.93,0,0,0,4.6,3.42,9.9,9.9,0,0,1-7.29,2,13.94,13.94,0,0,0,7.55,2.21,13.93,13.93,0,0,0,14-14.65A10,10,0,0,0,24,4.56Z" transform="translate(0 -2.25)"/></svg></a></li>
+                <li><a href="https://github.com/grant-sadowski"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23.41"><<path d="M12,0A12,12,0,0,0,8.21,23.39c.6.11.79-.26.79-.58V20.58c-3.34.73-4-1.42-4-1.42A3.18,3.18,0,0,0,3.63,17.4c-1.09-.75.08-.73.08-.73a2.52,2.52,0,0,1,1.84,1.24,2.55,2.55,0,0,0,3.49,1,2.55,2.55,0,0,1,.76-1.6C7.15,17,4.34,16,4.34,11.37A4.64,4.64,0,0,1,5.58,8.15,4.32,4.32,0,0,1,5.7,5s1-.32,3.3,1.23a11.37,11.37,0,0,1,6,0C17.3,4.66,18.3,5,18.3,5a4.31,4.31,0,0,1,.12,3.18,4.63,4.63,0,0,1,1.24,3.22c0,4.61-2.81,5.62-5.48,5.92A2.87,2.87,0,0,1,15,19.52v3.29c0,.32.19.69.8.58A12,12,0,0,0,12,0Z"/></svg></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       
       <div class="clear">
-        
       </div>
       
       <div class="creator">
-        <img class="floatRight" src="images/elaine.jpg" alt="Elaine Stephenson">
-        <div class="clearFix Elaine">
-          <h3>Elaine Stephenson</h3>
-          <p>Sed augue est, aliquam quis maximus at, fringilla non tellus. Nullam nec justo est. Duis maximus elementum rutrum. Fusce a lectus volutpat, tempus neque sed, blandit lectus. Aenean posuere, metus id vestibulum ornare, erat mi scelerisque nunc, sed convallis metus metus nec turpis.</p>
-        </div>
-        <div class="clearFix Elaine-links">
-          <ul>
-            <li><a href="#"><img class="social-icon" src="images/Instagram-icon.png" alt="Instagram icon"></a></li>
-            <li><a href="#"><img class="social-icon" src="images/Twitter_Social_Icon_Circle_White.png" alt="Twitter icon"></a></li>
-          </ul>
+        <div id="container-E">
+          <div id="Elaine-avatar-img-div">
+            <img class= "avatar" src="images/Profile_photos_Elaine.png" alt="Elaine Stephenson">
+          </div>
+          <div class="clearFix Elaine">
+            <h3 class="animation-element slide-left">Elaine Stephenson</h3>
+            <h4 class="animation-element slide-left">Creator, Designer, Photographer</h4>
+            <h4 class="animation-element slide-left">Favorite drink: Chai Tea Latte</h4>
+            <p class="animation-element slide-left">An Atlanta native and UGA graduate, Elaine is a full-time designer, artist and chai tea latte lover. From her design background and love of crafting by hand, she finds her calling in painting and hand-lettering. Her ultimate creative outlet is discovering ways to combine these two passions into beautiful art. When she is not creating art or lettering everyday, she is often practicing yoga, exploring Atlanta with Grant and stealing cuddles from their rescue kitty Cleo.</p>
+            <div class="links-div">
+              <ul class="Elaine-links">
+                <li><a href="https://www.instagram.com/artsy_elaine/"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.64.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.36.2-6.78,2.62-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.36,2.62,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.35-.2,6.78-2.62,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.35-2.62-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" transform="translate(0)"/></svg></a></li>
+                <li><a href="https://twitter.com/artsy_elaine"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 19.5"><path d="M24,4.56a9.83,9.83,0,0,1-2.83.78,4.93,4.93,0,0,0,2.17-2.72,9.86,9.86,0,0,1-3.13,1.2,4.93,4.93,0,0,0-8.39,4.49A14,14,0,0,1,1.67,3.15,4.93,4.93,0,0,0,3.19,9.72,4.9,4.9,0,0,1,1,9.11,4.93,4.93,0,0,0,4.91,14a4.94,4.94,0,0,1-2.22.08,4.93,4.93,0,0,0,4.6,3.42,9.9,9.9,0,0,1-7.29,2,13.94,13.94,0,0,0,7.55,2.21,13.93,13.93,0,0,0,14-14.65A10,10,0,0,0,24,4.56Z" transform="translate(0 -2.25)"/></svg></a></li>
+                <li><a href="http://www.elainestephenson.com/"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm1,16.06V13h3a18.52,18.52,0,0,1-.46,3.28A24.26,24.26,0,0,0,13,16.06Zm2,2.16a11.94,11.94,0,0,1-2,3.46V18.06C13.67,18.08,14.32,18.14,15,18.22ZM13,11V8a24.18,24.18,0,0,0,2.55-.22A18.49,18.49,0,0,1,16,11Zm0-5V2.33a12,12,0,0,1,2,3.5C14.33,5.91,13.67,6,13,6Zm2.7-3.27A10,10,0,0,1,19,4.86a17.43,17.43,0,0,1-2,.61A15.32,15.32,0,0,0,15.7,2.72ZM8.46,16.28A18.43,18.43,0,0,1,8,13h3v3.06A24.26,24.26,0,0,0,8.46,16.28ZM11,18.06v3.62a11.94,11.94,0,0,1-2-3.46C9.68,18.14,10.33,18.08,11,18.06ZM8,11a18.39,18.39,0,0,1,.45-3.24A24.18,24.18,0,0,0,11,8v3ZM9,5.82a12,12,0,0,1,2-3.5V6C10.33,6,9.67,5.91,9,5.82ZM7,5.47a17.35,17.35,0,0,1-2-.61A10,10,0,0,1,8.3,2.72,15.46,15.46,0,0,0,7,5.47ZM6.48,7.39A20.38,20.38,0,0,0,6,11H2.05A9.93,9.93,0,0,1,3.67,6.48,19.07,19.07,0,0,0,6.48,7.39Zm0,9.26a19.19,19.19,0,0,0-2.8.9A9.92,9.92,0,0,1,2.05,13H6A20.35,20.35,0,0,0,6.49,16.65ZM7,18.57A15.36,15.36,0,0,0,8.3,21.28,10,10,0,0,1,5,19.17,17.59,17.59,0,0,1,7,18.57Zm9.92,0a17.66,17.66,0,0,1,2,.6,10.06,10.06,0,0,1-3.26,2.12A15.47,15.47,0,0,0,17,18.57Zm.55-1.92A20.35,20.35,0,0,0,18,13h3.93a9.94,9.94,0,0,1-1.64,4.55A19.23,19.23,0,0,0,17.51,16.65ZM18,11a20.47,20.47,0,0,0-.49-3.61,19.08,19.08,0,0,0,2.81-.91A9.94,9.94,0,0,1,21.95,11Z"/></svg></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     
     <section class="clear">
-      <div>
+      <div class='section-title'>
         <h2>Instagram</h2>
       </div>
-      <div id="instafeed">
-        
-      </div>
-      
+
+      <div id="instafeed"></div>
       
     </section>
     
-    
-    
-    <footer class="clear">
-      <p>Copyright 2018</p>
-      <ul>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
-      </ul>
+
+    <footer>
+      <div class="footer-overlay">
+        <div class="footer-left">
+          <p>Copyright &copy; 2018</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/atlcoffeemap/">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2.16c3.2,0,3.58,0,4.85.07,3.25.15,4.77,1.69,4.92,4.92.06,1.27.07,1.65.07,4.85s0,3.58-.07,4.85c-.15,3.23-1.66,4.77-4.92,4.92-1.27.06-1.64.07-4.85.07s-3.58,0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s0-3.58.07-4.85C2.38,3.92,3.9,2.38,7.15,2.23,8.42,2.18,8.8,2.16,12,2.16ZM12,0C8.74,0,8.33,0,7.05.07c-4.36.2-6.78,2.62-7,7C0,8.33,0,8.74,0,12s0,3.67.07,4.95c.2,4.36,2.62,6.78,7,7C8.33,24,8.74,24,12,24s3.67,0,4.95-.07c4.35-.2,6.78-2.62,7-7C24,15.67,24,15.26,24,12s0-3.67-.07-4.95c-.2-4.35-2.62-6.78-7-7C15.67,0,15.26,0,12,0Zm0,5.84A6.16,6.16,0,1,0,18.16,12,6.16,6.16,0,0,0,12,5.84ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16ZM18.41,4.15a1.44,1.44,0,1,0,1.44,1.44A1.44,1.44,0,0,0,18.41,4.15Z" transform="translate(0)"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/atlcoffeemap">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 19.5"><path d="M24,4.56a9.83,9.83,0,0,1-2.83.78,4.93,4.93,0,0,0,2.17-2.72,9.86,9.86,0,0,1-3.13,1.2,4.93,4.93,0,0,0-8.39,4.49A14,14,0,0,1,1.67,3.15,4.93,4.93,0,0,0,3.19,9.72,4.9,4.9,0,0,1,1,9.11,4.93,4.93,0,0,0,4.91,14a4.94,4.94,0,0,1-2.22.08,4.93,4.93,0,0,0,4.6,3.42,9.9,9.9,0,0,1-7.29,2,13.94,13.94,0,0,0,7.55,2.21,13.93,13.93,0,0,0,14-14.65A10,10,0,0,0,24,4.56Z" transform="translate(0 -2.25)"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
     
-    
-    <script type="text/javascript" src="js/instafeed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/instafeed.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/parallax.js"></script>
     
     <script type="text/javascript">
-      var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'YOUR_CLIENT_ID'
+      var userFeed = new Instafeed({
+          get: "tagged",
+          tagName: 'atlcoffeemap',
+          userID: "6852765456",
+          accessToken: "30381130.3898543.4f646ae0acc1468a8b8402d1dc1720ce",
+          target: "instafeed",
+          sortBy: "most-recent",
+          resolution: "low_resolution",
+          template: "<a href='{{link}}' class='instaimg'><img src='{{image}}' /></a>",
+          limit: 4
       });
-      feed.run();
+      
+      userFeed.run();
+      
     </script>
     
   </body>
