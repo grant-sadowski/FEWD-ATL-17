@@ -211,7 +211,7 @@ header {
 }
 
 .change .burg1 {
-	transform: rotate(-45deg) translate(-8px, 10px);
+	transform: rotate(-45deg) translate(-7px, 9px);
 	background-color: white;
 	height: 4px;
 }
@@ -221,7 +221,7 @@ header {
 }
 
 .change .burg3 {
-	transform: rotate(45deg) translate(-8px, -12px);
+	transform: rotate(45deg) translate(-9px, -12px);
 	background-color: white;
 	height: 4px;
 }
@@ -248,6 +248,10 @@ header {
 
 /*-----------------------------------------MODAL STYLES*/
 #modalBrash {
+  display: none;
+}
+
+#modalSoon {
   display: none;
 }
 
@@ -745,13 +749,13 @@ select:focus {
   grid-column: 1 / 5;
   grid-row: span 4;
   /*background: #cfd5df;*/
+  overflow: hidden;
 }
 
 .grid-box-3 {
   grid-column: 1 / 5;
   grid-row: span 4;
   background: #cfd5df;
-  overflow: hidden;
 }
 
 .grid-box-4 {

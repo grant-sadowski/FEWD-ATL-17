@@ -7,6 +7,7 @@ var modalParish = document.getElementById('modalParish');
 var modalSanFran = document.getElementById('modalSanFran');
 var modalJavaCats = document.getElementById('modalJavaCats');
 var modalChromeYellow = document.getElementById('modalChromeYellow');
+var modalSoon = document.getElementById('modalSoon');
 
 var $animation_elements = $('.animation-element');
 var $window = $(window);
@@ -15,7 +16,7 @@ var $window = $(window);
 
 $('.close').click(closeModal);
 $('#modalBrash').click(closeModal);
-
+$('#modalSoon').click(closeModal);
 
 $(window).on('scroll resize', check_if_in_view);
 $(window).trigger('scroll');
@@ -473,6 +474,27 @@ function initMap() {
   markerBrash.addListener('click',function() {
     clickBrash();
   });
+  markerParish.addListener('click',function() {
+    clickSoon();
+  });
+  markerSanFran.addListener('click',function() {
+    clickSoon();
+  });
+  markerJavaCats.addListener('click',function() {
+    clickSoon();
+  });
+  markerChromeYellow.addListener('click',function() {
+    clickSoon();
+  });
+  markerSpiller.addListener('click',function() {
+    clickSoon();
+  });
+  markerInmanPerk.addListener('click',function() {
+    clickSoon();
+  });
+  markerHodgepodge.addListener('click',function() {
+    clickSoon();
+  });
 }
 
 function initMapBrash() {
@@ -850,11 +872,15 @@ function initMapBrash() {
 
 function clickBrash() {
   $('#modalBrash').css('display', 'block');
-  console.log("hellow");
+}
+
+function clickSoon() {
+  $('#modalSoon').css('display', 'block');
 }
 
 function closeModal() {
   $('#modalBrash').css('display', 'none');
+  $('#modalSoon').css('display', 'none');
 }
 
 function hamburgerChange(x) {
